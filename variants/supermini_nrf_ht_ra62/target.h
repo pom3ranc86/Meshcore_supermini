@@ -7,12 +7,12 @@
 #include <helpers/AutoDiscoverRTCClock.h>
 #include <helpers/ui/NullDisplayDriver.h>
 #include <helpers/ui/MomentaryButton.h>
-#include <helpers/sensors/EnvironmentSensorManager.h>
+#include "DS18B20Sensor.h"
 
 extern PromicroBoard board;
 extern WRAPPER_CLASS radio_driver;
 extern AutoDiscoverRTCClock rtc_clock;
-extern EnvironmentSensorManager sensors;
+extern SuperMiniSensorManager sensors;
 extern NullDisplayDriver display;
 extern MomentaryButton user_btn;
 

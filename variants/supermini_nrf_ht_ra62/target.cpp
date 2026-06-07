@@ -7,7 +7,7 @@ RADIO_CLASS radio = new Module(P_LORA_NSS, P_LORA_DIO_1, P_LORA_RESET, P_LORA_BU
 WRAPPER_CLASS radio_driver(radio, board);
 VolatileRTCClock fallback_clock;
 AutoDiscoverRTCClock rtc_clock(fallback_clock);
-EnvironmentSensorManager sensors;
+SuperMiniSensorManager sensors;
 NullDisplayDriver display;
 MomentaryButton user_btn(PIN_USER_BTN, 1000, true, true);
 
