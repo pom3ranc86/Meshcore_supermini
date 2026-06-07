@@ -9,6 +9,7 @@ VolatileRTCClock fallback_clock;
 AutoDiscoverRTCClock rtc_clock(fallback_clock);
 EnvironmentSensorManager sensors;
 NullDisplayDriver display;
+MomentaryButton user_btn(PIN_USER_BTN, 1000, true, true);
 
 bool radio_init() {
   rtc_clock.begin(Wire);

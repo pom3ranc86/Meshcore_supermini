@@ -12,4 +12,3 @@ const uint32_t g_ADigitalPinMap[] = {
 void initVariant()
 {
 }
-
